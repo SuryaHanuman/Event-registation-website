@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details - EventHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+  <style>
+    .registration-form {
+  max-width: 400px;                
+  margin: 2rem auto;                
+  background-color:rgb(169, 179, 159);       
+  padding: 2rem;                    
+  background-repeat: no-repeat;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(77, 74, 74, 0.1); 
+  
+}
+
+    body{
+      background-color: rgb(198, 239, 247);
+   
+    }
+    .he2{
+      text-align: center;
+          }
+  </style>
+
+  <header>
+    <h1>Register now</h1>
+    <nav>       
+          <a href="index.html" class="nav-button">Home</a>
+            <a href="events.html" class="nav-button"> Events</a>  
+    </nav>
+  </header>
+
+  <section class="event-details">
+    <h2 class="he2">Workshop</h2>
+  
+    <p>Welcome to Event ! This event brings you a mix of keynotes, panel discussions, and networking sessions.</p>
+    
+    <form id="registerForm" class="registration-form">
+      <h3>Register for Event</h3>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="eventType">Event Type:</label>
+      <select id="eventType" name="eventType" required>
+        <option value="">Select Event Type</option>
+        <option value="Conference">Conference</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Networking">Networking</option>
+        <option value="Festival">Festival</option>
+      </select>
+
+      <label for="attendees">Number of Attendees:</label>
+      <input type="number" id="attendees" name="attendees" min="1" max="10" placeholder="Enter number of attendees" required>
+
+      <label for="notes">Additional Notes (Optional):</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements or comments"></textarea>
+
+      <button type="submit" class="cta-button">Submit Registration</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
